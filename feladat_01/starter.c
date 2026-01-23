@@ -13,14 +13,13 @@ int balance = 0;
 
 // A szal fuggveny, amit minden szal vegre fog hajtatni
 void* deposit_money(void* arg) {
-    // TODO: Irj egy ciklust, ami INCREMENTS_PER_THREAD-szer fut
-    // TODO: Minden iteracioban noveld a balance valtozot egyel
+   
     
     return NULL;
 }
 
 int main() {
-    // TODO: Hozz letre egy pthread_t tombot NUM_THREADS meretu elemmel
+    
     
     printf("Kezdeti egyenleg: %d dollar\n", balance);
     printf("Inditas: %d penztaros, mindegyik %d dollar befizetesevel...\n", 

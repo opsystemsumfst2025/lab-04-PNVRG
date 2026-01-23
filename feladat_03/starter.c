@@ -12,16 +12,12 @@ int* array = NULL;
 // Globalis flag: melyik pozicion talaltuk a -1-et
 int found_at = -1;
 
-// TODO: Deklaralj egy mutexet a found_at vedelmere
-
-// Struktura a szalak parametereinek atadasahoz
 typedef struct {
     int thread_id;
     int start_index;
     int end_index;
 } ThreadData;
 
-// A kereses fuggveny, amit minden szal vegrehajt
 void* search_thread(void* arg) {
     ThreadData* data = (ThreadData*)arg;
     
@@ -35,10 +31,7 @@ void* search_thread(void* arg) {
     //       3. Ha nem, vizsgald meg az aktualis elemet
     //       4. Ha az aktualis elem -1, zarold a mutexet, allitsd be a found_at-ot, oldsd fel a mutexet
     
-    // TIPP: Optimalizalas miatt ne minden iteracioban ellenorizd a flaget,
-    //       hanem csak minden 10000. elemnel
-    
-    return NULL;
+     return NULL;
 }
 
 int main() {

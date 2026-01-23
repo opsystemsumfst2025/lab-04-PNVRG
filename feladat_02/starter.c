@@ -17,7 +17,7 @@ void* deposit_money(void* arg) {
         
         balance++;
         
-        // TODO: Oldsd fel a mutexet itt (pthread_mutex_unlock)
+      
     }
     return NULL;
 }
@@ -25,9 +25,7 @@ void* deposit_money(void* arg) {
 int main() {
     pthread_t threads[NUM_THREADS];
     
-    // TODO: Inicializald a mutexet
-    // Vagy hasznald: pthread_mutex_init(&mutex, NULL);
-    // Vagy globalis szinten: pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+   
     
     printf("Kezdeti egyenleg: %d dollar\n", balance);
     printf("Inditas: %d penztaros, mindegyik %d dollar befizetesevel...\n", 
